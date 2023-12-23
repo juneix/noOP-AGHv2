@@ -27,7 +27,7 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 **常规更新软件包**  
 `apk update && apk upgrade`，可以顺便重启一下`reboot`
 
-## 二、配置软件
+## 二、安装软件
 使用你喜欢的 ssh 工具登录到 Alpine。
 
 - （可选）替换清华镜像源  
@@ -52,10 +52,11 @@ AdGuardHome 安装完就会自动启动了。
 **加速脚本**  
 `sh -c "$(wget -qO- https://gh.5nav.eu.org/github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
 
-**安装 iptables 模块**
+**安装 iptables 模块**  
 `apk add iptables ip6tables`
 
-### 2.3 启动 v2rayA
-`rc-service v2raya start`
-设置开机自启动
+**启动 v2rayA 服务**  
+`rc-service v2raya start`  
+
+**设置 v2rayA 开机自启动**  
 `rc-update add v2raya`
