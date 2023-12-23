@@ -11,7 +11,7 @@
 
 ### 1.2 安装 Alpine 系统
 参考教程➡️`https://www.ioiox.com/archives/25.html`  
-CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际情况修改。
+CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认或根据你的实际情况修改。
 
 **系统初始化配置**
 ![iShot_2023-12-23_18 36 31](https://github.com/juneix/vmm-alpine/assets/81808039/8d55dc5a-2f01-4b2a-89d5-c453ce82b8e7)
@@ -40,7 +40,7 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 记住上面的 IP 地址（建议去路由器后台给虚拟机分配一个固定 IP），使用你喜欢的 ssh 工具登录到 Alpine。
 
 **常规更新软件包**  
-`apk update && apk upgrade`，
+`apk update && apk upgrade`
 
 - （可选）替换清华镜像源  
 `sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories`
