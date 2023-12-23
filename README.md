@@ -24,8 +24,8 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
   - 选择硬盘时，输入 sda（对应 SYNOLOGY Storage）  
   - `How would you like to use it? ('sys', 'data', 'crypt', 'lvm' or '?' for help) [?] `输入 sys  
 
-**常规更新软件包**
-`apk update && apk upgrade`
+**常规更新软件包**  
+`apk update && apk upgrade`，可以顺便重启一下`reboot`
 
 ## 二、配置软件
 使用你喜欢的 ssh 工具登录到 Alpine。
@@ -40,7 +40,7 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 **原始脚本**  
 `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 
-**加速脚本** 
+**加速脚本**  
 `curl -s -S -L https://gh.5nav.eu.org/raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 
 AdGuardHome 安装完就会自动启动了。
