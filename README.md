@@ -10,7 +10,7 @@
 ![iShot_2023-12-23_18 37 12](https://github.com/juneix/vmm-alpine/assets/81808039/2a1e8d6f-08a9-4c01-a437-ca40d45d2c3a)
 
 ### 1.2 安装 Alpine 系统
-参考虚拟机安装 Linux 的通用教程。`https://www.ioiox.com/archives/25.html`  
+参考教程➡️`https://www.ioiox.com/archives/25.html`  
 CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际情况修改。
 
 **系统初始化配置**
@@ -18,6 +18,8 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 进入网页控制台，输入`root`登录，默认没有密码。  
 ![iShot_2023-12-23_19 17 13](https://github.com/juneix/vmm-alpine/assets/81808039/4dbbebac-5106-4e2d-9ac0-378e6745de32)
 然后输入`setup-alpine`开始初始化，需要会一点基础的英文，基本上一路回车确认就行。搞错了也不用怕，输入`setup-alpine`再来一遍就是了。  
+
+参考教程➡️`https://www.qunniao.net/1408.html`
 
 | 设置选项               | 输入内容        |
 | -------------------- | -------------- |
@@ -31,8 +33,8 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
   - `Allow root ssh login?` 输入 **yes**  
 - ⚠️安装系统到虚拟硬盘  
   - `Which disk(s) would you like to use?` 输入 **sda**（对应 SYNOLOGY Storage）  
-  - `How would you like to use it?` 输入 **sys**（安装系统盘），然后输入 **y** 确认格式化。
-最后重启一下系统。`reboot`
+  - `How would you like to use it?` 输入 **sys**（安装系统盘），然后输入 **y** 确认格式化
+  - 最后重启一下系统，输入 **reboot**
 
 ## 二、安装软件
 记住上面的 IP 地址（建议去路由器后台给虚拟机分配一个固定 IP），使用你喜欢的 ssh 工具登录到 Alpine。
