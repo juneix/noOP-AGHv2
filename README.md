@@ -28,10 +28,18 @@
 `apk update && apk upgrade`
 
 ## 一键安装 AdGuard Home
-`curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`
+原始脚本  
+`curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
+
+加速脚本  
+`curl -s -S -L https://gh.5nav.eu.org/raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 
 ## 一键安装v2rayA
-`sh -c "$(wget -qO- https://gh.5nav.eu.org/github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`
+原始脚本  
+`sh -c "$(wget -qO- https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
+
+加速脚本  
+`sh -c "$(wget -qO- https://gh.5nav.eu.org/github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
 
 ## 安装 iptables 模块
 `apk add iptables ip6tables`
