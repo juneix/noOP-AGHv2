@@ -15,7 +15,7 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 
 **系统初始化配置**
 ![iShot_2023-12-23_18 36 31](https://github.com/juneix/vmm-alpine/assets/81808039/8d55dc5a-2f01-4b2a-89d5-c453ce82b8e7)
-进入网页控制台，输入`setup-alpine`开始初始化设置。  
+进入网页控制台，输入`setup-alpine`开始初始化，设置 IP，开启 ssh等等。  
 需要会一点基础的英文，基本上一路回车确认就行了。  
 
 - ⚠️允许 ssh 密码登录，方便下面输入一键脚本命令。  
@@ -28,7 +28,7 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 `apk update && apk upgrade`，可以顺便重启一下`reboot`
 
 ## 二、安装软件
-使用你喜欢的 ssh 工具登录到 Alpine。
+记住上面的 IP 地址（建议设置为静态 IP），使用你喜欢的 ssh 工具登录到 Alpine。
 
 - （可选）替换清华镜像源  
 `sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories`
