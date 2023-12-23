@@ -17,28 +17,28 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 ![iShot_2023-12-23_18 36 31](https://github.com/juneix/vmm-alpine/assets/81808039/8d55dc5a-2f01-4b2a-89d5-c453ce82b8e7)
 进入网页控制台，输入`root`登录，默认没有密码。  
 ![iShot_2023-12-23_19 17 13](https://github.com/juneix/vmm-alpine/assets/81808039/4dbbebac-5106-4e2d-9ac0-378e6745de32)
-然后输入`setup-alpine`开始初始化，设置主机名、密码、时区、IP（DHCP 自动获取）、开启 ssh 等等。  
-
-需要会一点基础的英文，基本上一路回车确认就行。搞错了也不用怕，输入`setup-alpine`再来一遍就是了。  
+然后输入`setup-alpine`开始初始化，需要会一点基础的英文，基本上一路回车确认就行。搞错了也不用怕，输入`setup-alpine`再来一遍就是了。  
 
 | 设置选项               | 输入内容        |
 | -------------------- | -------------- |
-| 键盘布局               | cn            |
-| 主机名、网卡、IP、DNS   | 回车默认        |
-| 时区                  | Asia，Shanghai |
+| 键盘布局               | cn（两次）      |
+| 主机名、网络            | 回车默认        |
+| 时区                  | PRC（大写）     |
 | 软件源                | 回车默认（待会改）|
+| 其他                  | 回车默认        |
 
 - ⚠️允许 ssh 密码远程登录，方便下面输入一键脚本命令。  
-  - `Allow root ssh login?` 输入 yes  
+  - `Allow root ssh login?` 输入 **yes**  
 - ⚠️安装系统到虚拟硬盘  
-  - 选择硬盘时，输入 sda（对应 SYNOLOGY Storage）  
-  - `How would you like to use it?`输入 sys  
-
-**常规更新软件包**  
-`apk update && apk upgrade`，可以顺便重启一下`reboot`
+  - `Which disk(s) would you like to use?` 输入 **sda**（对应 SYNOLOGY Storage）  
+  - `How would you like to use it?` 输入 **sys**（安装系统盘），然后输入 **y** 确认格式化。
+最后重启一下系统。`reboot`
 
 ## 二、安装软件
-记住上面的 IP 地址（建议设置为静态 IP），使用你喜欢的 ssh 工具登录到 Alpine。
+记住上面的 IP 地址（建议去路由器后台给虚拟机分配一个固定 IP），使用你喜欢的 ssh 工具登录到 Alpine。
+
+**常规更新软件包**  
+`apk update && apk upgrade`，
 
 - （可选）替换清华镜像源  
 `sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories`
