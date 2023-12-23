@@ -15,7 +15,10 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 
 **系统初始化配置**
 ![iShot_2023-12-23_18 36 31](https://github.com/juneix/vmm-alpine/assets/81808039/8d55dc5a-2f01-4b2a-89d5-c453ce82b8e7)
-进入网页控制台，输入`setup-alpine`开始初始化，设置 IP，开启 ssh等等。  
+进入网页控制台，输入`root`登录，默认没有密码。  
+![iShot_2023-12-23_19 17 13](https://github.com/juneix/vmm-alpine/assets/81808039/4dbbebac-5106-4e2d-9ac0-378e6745de32)
+然后输入`setup-alpine`开始初始化，设置主机名、密码、时区、IP（DHCP 自动获取）、开启 ssh 等等。  
+
 需要会一点基础的英文，基本上一路回车确认就行了。  
 
 - ⚠️允许 ssh 密码登录，方便下面输入一键脚本命令。  
