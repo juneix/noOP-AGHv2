@@ -3,6 +3,7 @@
 使用群晖虚拟机部署 Alpine 系统，一键脚本安装 AdGuard Home➕v2rayA。
 
 ## 下载 Alpine 镜像
+![iShot_2023-12-23_18 37 12](https://github.com/juneix/vmm-alpine/assets/81808039/2a1e8d6f-08a9-4c01-a437-ca40d45d2c3a)
 虚拟机专用仅有60MB，上传到群晖【VMM - 映像 - ISO文件】  
 `https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.0-x86_64.iso`
 
@@ -10,6 +11,7 @@
 参考虚拟机安装 Linux 的通用教程。`https://www.ioiox.com/archives/25.html`
 
 ## 系统初始化配置
+![iShot_2023-12-23_18 36 31](https://github.com/juneix/vmm-alpine/assets/81808039/8d55dc5a-2f01-4b2a-89d5-c453ce82b8e7)
 需要会一点基础的英文，基本上一路回车确认就行了。  
 `setup-alpine` 
 
