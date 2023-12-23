@@ -18,7 +18,7 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 需要会一点基础的英文，基本上一路回车确认就行了。  
 
 - ⚠️允许 ssh 密码登录，方便下面输入一键脚本命令。  
-`PermitRootLogin` 输入 yes  
+  - `PermitRootLogin` 输入 yes  
 - ⚠️安装系统到虚拟硬盘  
   - 选择硬盘时，输入 sda（对应 SYNOLOGY Storage）  
   - `How would you like to use it? ('sys', 'data', 'crypt', 'lvm' or '?' for help) [?] `输入 sys  
