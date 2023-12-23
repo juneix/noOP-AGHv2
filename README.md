@@ -21,11 +21,18 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认，或根据你的实际
 
 需要会一点基础的英文，基本上一路回车确认就行。搞错了也不用怕，输入`setup-alpine`再来一遍就是了。  
 
-- ⚠️允许 ssh 密码登录，方便下面输入一键脚本命令。  
-  - `PermitRootLogin` 输入 yes  
+| 设置选项               | 输入内容        |
+| -------------------- | -------------- |
+| 键盘布局               | cn            |
+| 主机名、网卡、IP、DNS   | 回车默认        |
+| 时区                  | Asia，Shanghai |
+| 软件源                | 回车默认（待会改）|
+
+- ⚠️允许 ssh 密码远程登录，方便下面输入一键脚本命令。  
+  - `Allow root ssh login?` 输入 yes  
 - ⚠️安装系统到虚拟硬盘  
   - 选择硬盘时，输入 sda（对应 SYNOLOGY Storage）  
-  - `How would you like to use it? ('sys', 'data', 'crypt', 'lvm' or '?' for help) [?] `输入 sys  
+  - `How would you like to use it?`输入 sys  
 
 **常规更新软件包**  
 `apk update && apk upgrade`，可以顺便重启一下`reboot`
