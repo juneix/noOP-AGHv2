@@ -55,7 +55,7 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认或根据你的实际情
 **加速脚本**  
 `curl -s -S -L https://gh.5nav.eu.org/https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 
-AdGuardHome 安装完就会自动启动了。
+AdGuardHome 安装完就会自动启动了，后台管理地址，IP:3000  
 
 ### 2.2 一键安装 v2rayA
 **原始脚本**  
@@ -71,4 +71,7 @@ AdGuardHome 安装完就会自动启动了。
 `rc-service v2raya start`  
 
 **设置 v2rayA 开机自启动**  
-`rc-update add v2raya`
+`rc-update add v2raya`  
+
+后台管理地址，IP:2017  
+具体使用教程见官方文档 https://v2raya.org
