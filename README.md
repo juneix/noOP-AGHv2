@@ -53,7 +53,7 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认或根据你的实际情
 `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 
 **加速脚本**  
-`curl -s -S -L https://gh.5nav.eu.org/raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
+`curl -s -S -L https://gh.5nav.eu.org/https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 
 AdGuardHome 安装完就会自动启动了。
 
@@ -62,7 +62,7 @@ AdGuardHome 安装完就会自动启动了。
 `sh -c "$(wget -qO- https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
 
 **加速脚本**  
-`sh -c "$(wget -qO- https://gh.5nav.eu.org/github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
+`sh -c "$(wget -qO- https://gh.5nav.eu.org/https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
 
 **安装 iptables 模块**  
 `apk add iptables ip6tables`
