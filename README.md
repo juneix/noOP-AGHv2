@@ -1,6 +1,6 @@
 # vmm-alpine
 
-使用群晖虚拟机部署 Alpine 系统，一键脚本安装 AdGuard Home➕v2rayA 作为旁路网关（透明代理），替换掉繁琐麻烦的 OpenWrt 旁路由方案。
+使用群晖虚拟机部署 Alpine 系统，一键脚本安装 AdGuard Home➕v2rayA 作为旁路网关（透明代理），替换掉操作繁琐的 OpenWrt 旁路由方案。
 
 ## 一、安装系统
 
