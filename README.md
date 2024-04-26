@@ -1,6 +1,6 @@
 # vmm-alpine
 
-使用群晖虚拟机部署 Alpine 系统，一键脚本安装 AdGuard Home➕v2rayA 作为旁路网关（透明代理），替换掉操作繁琐的 OpenWrt 旁路由方案。
+使用群晖虚拟机部署 Alpine 系统，一键脚本安装 AdGuard Home➕v2rayA 作为透明代理，替换掉劝退小白、操作繁琐的 OpenWrt 旁路由方案。
 
 ## 一、安装系统
 
@@ -49,20 +49,14 @@ CPU、内存都 1 GB，虚拟硬盘 10 GB，其他默认或根据你的实际情
 `apk add qemu-guest-agent`
 
 ### 2.1 一键安装 AdGuard Home
-**原始脚本**  
+**一键脚本**  
 `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
-
-**加速脚本**  
-`curl -s -S -L https://gh.5nav.eu.org/https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 
 AdGuardHome 安装完就会自动启动了，后台管理地址，IP:3000  
 
 ### 2.2 一键安装 v2rayA
-**原始脚本**  
+**一键脚本**  
 `sh -c "$(wget -qO- https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
-
-**加速脚本**  
-`sh -c "$(wget -qO- https://gh.5nav.eu.org/https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
 
 **安装 iptables 模块**  
 `apk add iptables ip6tables`
