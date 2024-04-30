@@ -54,13 +54,13 @@
 `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 后台管理地址，IP:3000，更多教程见 P3TERX 大佬的[AGH设置教程](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
 
-## 二、搭配使用AGH➕v2A
+## 二、搭配使用 AGH➕v2A
 ### 1. AGH 初始化设置时，网页端口建议 3000，**DNS 端口必须使用默认 53**。
 
-如果提示 53 端口已绑定`bind: address already in use`，请参考[AGH官方文档](https://adguard-dns.io/kb/zh-CN/adguard-home/faq/#bindinuse)解除占用。
+如果提示 53 端口已绑定`bind: address already in use`，请参考[AGH官方文档](https://adguard-dns.io/kb/zh-CN/adguard-home/faq/#bindinuse)解除占用。  
 文档暂时没中文版本，请打开浏览器翻译功能，推荐[沉浸式翻译扩展](https://immersivetranslate.com/)
 
-### 2. v2rayA 设置参考
+### 2. v2A 设置参考
 右上角⚙️【设置】  
 - 透明代理：大陆白名单或者 GFWlist，开启 IP 转发，开启端口分享
 - 实现方式：tproxy
@@ -70,4 +70,4 @@
 ![v2ray-setting](https://github.com/juneix/noOP-AGHv2/assets/81808039/ffff4967-bc13-4e49-8c47-9b96df553d10)
 
 按需【创建】单个节点，或【导入】订阅链接。  
-选中 2-6 个节点后，左上角启动，更多详细教程可以参考油管或谷歌搜索。
+建议选中 3-6 个节点后，左上角启动，更多详细教程可以参考油管或谷歌搜索。
