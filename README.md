@@ -5,7 +5,13 @@
 我先说个「暴论」， 70% 的人其实压根不需要 Openwrt 除了魔法上网的大部分功能， 90% 的人都是随大流，根据各种教程安装了 OP，结果就是各种配置繁杂的教程，还有各种易冲突的插件。
 经过千辛万苦终于折腾完成后，却发现宽带的 IPv6 公网访问没了，NAT1 网络环境也没了。
 
-本方案操作简单，对设备性能要求很低，除了 AGH➕v2，你依然可以安装 CasaOS 随便折腾，比 Openwrt 的扩展性和易用性也强多了
+本方案操作简单，对设备性能要求很低，除了 AGH➕v2，你依然可以安装 CasaOS 随便折腾，比 Openwrt 的扩展性和易用性也强多了。
+- IPv6 正常使用，搭配 Lucky 可以轻松实现远程访问
+- NAT1 正常使用，XBox、Switch可正常联机，大部分时候不需要游戏加速器
+- XBox 可快速重定向修改下载服务器
+![xbox-down-ip](https://github.com/juneix/noOP-AGHv2/assets/81808039/efec34fb-0653-4293-85ac-d266fd04f829)
+![xbox-speed](https://github.com/juneix/noOP-AGHv2/assets/81808039/38ffa48c-4201-4593-babe-cb3d1a8eb69b)
+
 
 使用本方案，你需要准备以下设备：
 - 一台 Linux 系统的低功耗设备（最低配置：~~让卖家帮忙~~刷了 Armbian 的 20 块玩客云即可）
@@ -26,7 +32,7 @@
 安装来源是作者的官网，部分地区可能速度较慢，请耐心等待。
 `sh -c "$(wget -qO- https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
 
-**安装 iptables 模块**（已安装可跳过）
+**安装 iptables 模块**（已安装可跳过）  
 `apk add iptables ip6tables`
 
 **启动 v2rayA 服务**  
@@ -43,15 +49,19 @@
 后台管理地址，IP:3000，更多教程见 P3TERX 大佬的[AGH设置教程](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
 
 ## 二、搭配使用AGH➕v2
-1. AGH 初始化设置时，网页端口建议 3000，**DNS 端口必须使用默认 53**。
+### 1. AGH 初始化设置时，网页端口建议 3000，**DNS 端口必须使用默认 53**。
 
 如果提示 53 端口已绑定`bind: address already in use`，请参考[AGH官方文档](https://adguard-dns.io/kb/zh-CN/adguard-home/faq/#bindinuse)解除占用。
 文档暂时没中文版本，请打开浏览器翻译功能，推荐[沉浸式翻译扩展](https://immersivetranslate.com/)
 
-3. v2rayA 设置参考
+### 2. v2rayA 设置参考
+右上角⚙️【设置】  
 - 透明代理：大陆白名单或者 GFWlist，开启 IP 转发，开启端口分享
 - 实现方式：tproxy
 - 分流模式：同上（支持 http 和 socks5 代理）
 - 防止 DNS 污染：自定义高级设置
 - 其他默认
-<img width="640" alt="HapiGo 2024-04-30 10 14 53" src="https://github.com/juneix/noOP-AGHv2/assets/81808039/ffff4967-bc13-4e49-8c47-9b96df553d10">
+<img width="640" alt="HapiGo 2024-04-30 10 14 53" src="https://github.com/juneix/noOP-AGHv2/assets/81808039/ffff4967-bc13-4e49-8c47-9b96df553d10">  
+
+按需【创建】单个节点，或【导入】订阅链接。  
+选中 2-6 个节点后，左上角启动，更多详细教程可以参考油管或谷歌搜索。
