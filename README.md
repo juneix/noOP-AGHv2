@@ -30,7 +30,7 @@
 使用 Xterminal 登录你的 Linux 设备。输入以下一键脚本命令安装所需工具。
 
 ### 1. Github520（可跳过）
-请确保你的网络可以顺利访问 Github，提供一个[Github520](https://github.com/521xueweihan/GitHub520)项目供参考，如果还不行请自己解决。
+请确保你的网络可以顺利访问 Github，提供一个[Github520](https://github.com/521xueweihan/GitHub520)项目供参考，如果还不行请自己解决。  
 `sudo sh -c 'sed -i "/# GitHub520 Host Start/Q" /etc/hosts && curl https://raw.hellogithub.com/hosts >> /etc/hosts'`
 
 ### 2. 一键安装 v2rayA
