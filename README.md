@@ -21,7 +21,7 @@
 
 使用本方案，你需要准备以下设备：
 - 一台 Linux 系统的低功耗 arm 或 x86 设备（最低配置：~~让卖家帮忙~~刷了 Armbian 的 20 块玩客云即可）
-- 虚拟机创建 Debian、Alpine 等 Linux 系统也行（支持 Docker 部署，但更推荐使用虚拟机独立 IP）
+- 虚拟机创建 Debian 等 Linux 系统也行（支持 Docker 部署，但更推荐使用虚拟机独立 IP）
 - 一个千兆网口（对，单网卡就行）
 > 另一台电脑远程操作，需安装 ssh 工具（Win、Mac 自带终端就行，但新手推荐更简单的 [Xterminal](https://www.terminal.icu/)）  
 > 如果实在没电脑……手机使用 Termius、ServerBox 等 ssh 工具也可以。
@@ -35,7 +35,7 @@
 
 ### 2. 一键安装 v2rayA
 **一键脚本**  
-安装来源是作者的官网，部分地区可能速度较慢，请耐心等待。
+安装来源是作者的官网，部分地区可能速度较慢，请耐心等待。  
 `sh -c "$(wget -qO- https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
 
 **安装 iptables 模块**（已安装可跳过）  
