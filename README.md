@@ -8,7 +8,7 @@
 本方案操作简单，对设备性能要求很低，除了 AGH➕v2，你依然可以安装 CasaOS 随便折腾，比 Openwrt 的扩展性和易用性也强多了。
 - IPv6 正常使用，搭配 Lucky 可以轻松实现远程访问
 - NAT1 正常使用，XBox、Switch可正常联机，大部分时候不需要游戏加速器
-- XBox 可快速重定向修改下载服务器
+- XBox 可快速修改下载服务器 IP，基本跑满带宽
 ![xbox-down-ip](https://github.com/juneix/noOP-AGHv2/assets/81808039/efec34fb-0653-4293-85ac-d266fd04f829)
 ![xbox-speed](https://github.com/juneix/noOP-AGHv2/assets/81808039/38ffa48c-4201-4593-babe-cb3d1a8eb69b)
 
