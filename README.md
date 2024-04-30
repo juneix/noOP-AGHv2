@@ -2,12 +2,13 @@
 
 本方案使用 Linux 系统一键脚本安装 AdGuard Home➕v2rayA，作为透明代理和 DNS 服务器，替换掉劝退小白、操作繁琐的 OpenWrt 软（旁）路由方案。 
 
-我先说个「暴论」， 70% 的人其实压根不需要 Openwrt 除了魔法上网的大部分功能， 90% 的人都是随大流，根据各种教程安装了 OP，结果就是各种配置繁杂的教程，还有各种易冲突的插件。
-经过千辛万苦终于折腾完成后，却发现宽带的 IPv6 公网访问没了，NAT1 网络环境也没了。
+我先说个「暴论」， 70% 的人其实压根不需要 Openwrt 除了魔法上网的大部分功能，大部分人都是随大流，根据各种 XX 教程安装了 OP，结果就是各种配置繁杂的过程，还有各种易冲突的插件。
+> 针对高阶需求的用户，OP、爱快是好工具，但它们都不太适合普通人，基本用不上（除非你家里开公司、开酒店民宿）。
+经过千辛万苦终于出国了，却发现宽带的 IPv6 公网访问没了，NAT1 网络环境也没了？岂不是得不偿失。
 
-本方案操作简单，对设备性能要求很低，除了 AGH➕v2，你依然可以安装 CasaOS 随便折腾，比 Openwrt 的扩展性和易用性也强多了。
+本方案操作简单，对设备性能要求很低，除了 AGH➕v2A，你依然可以安装 CasaOS 随便折腾，比 Openwrt 的扩展性和易用性强多了。
 - 推荐全屋网络接入 AGH（修改路由器 DNS ），去除部分广告，防止大数据追踪
-- 可全屋自动分流出国（修改路由器网关），也可以特定设备按需出国（单独设置网关或 socks5 代理）
+- v2A 可全屋自动分流出国（修改路由器网关），也可以特定设备按需出国（单独设置网关或 socks5 代理）
 - IPv6 正常使用，搭配 Lucky 可以轻松实现远程访问
 - NAT1 正常使用，XBox、Switch可正常联机，大部分时候不需要游戏加速器
 - XBox 可快速修改下载服务器 IP，基本跑满带宽
@@ -52,7 +53,7 @@
 `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 后台管理地址，IP:3000，更多教程见 P3TERX 大佬的[AGH设置教程](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
 
-## 二、搭配使用AGH➕v2
+## 二、搭配使用AGH➕v2A
 ### 1. AGH 初始化设置时，网页端口建议 3000，**DNS 端口必须使用默认 53**。
 
 如果提示 53 端口已绑定`bind: address already in use`，请参考[AGH官方文档](https://adguard-dns.io/kb/zh-CN/adguard-home/faq/#bindinuse)解除占用。
