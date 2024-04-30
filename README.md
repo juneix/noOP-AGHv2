@@ -6,9 +6,13 @@
 经过千辛万苦终于折腾完成后，却发现宽带的 IPv6 公网访问没了，NAT1 网络环境也没了。
 
 本方案操作简单，对设备性能要求很低，除了 AGH➕v2，你依然可以安装 CasaOS 随便折腾，比 Openwrt 的扩展性和易用性也强多了。
+- 推荐全屋网络接入 AGH（修改路由器 DNS ），去除部分广告，防止大数据追踪
+- 可全屋自动分流出国（修改路由器网关），也可以特定设备按需出国（单独设置网关或 socks5 代理）
 - IPv6 正常使用，搭配 Lucky 可以轻松实现远程访问
 - NAT1 正常使用，XBox、Switch可正常联机，大部分时候不需要游戏加速器
 - XBox 可快速修改下载服务器 IP，基本跑满带宽
+
+![agh](https://github.com/juneix/noOP-AGHv2/assets/81808039/bcd3a018-f1ce-434b-9047-f1907f4e83ee)
 ![xbox-down-ip](https://github.com/juneix/noOP-AGHv2/assets/81808039/efec34fb-0653-4293-85ac-d266fd04f829)
 ![xbox-speed](https://github.com/juneix/noOP-AGHv2/assets/81808039/38ffa48c-4201-4593-babe-cb3d1a8eb69b)
 
@@ -23,11 +27,11 @@
 ## 一、安装工具
 使用 Xterminal 登录你的 Linux 设备。输入以下一键脚本命令安装所需工具。
 
-### 1.1 Github520（可跳过）
+### 1. Github520（可跳过）
 请确保你的网络可以顺利访问 Github，提供一个[Github520](https://github.com/521xueweihan/GitHub520)项目供参考，如果还不行请自己解决。
 `sudo sh -c 'sed -i "/# GitHub520 Host Start/Q" /etc/hosts && curl https://raw.hellogithub.com/hosts >> /etc/hosts'`
 
-### 1.2 一键安装 v2rayA
+### 2. 一键安装 v2rayA
 **一键脚本**  
 安装来源是作者的官网，部分地区可能速度较慢，请耐心等待。
 `sh -c "$(wget -qO- https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
@@ -43,7 +47,7 @@
 
 后台管理地址，IP:2017，更多使用教程见[v2rayA官方文档](https://v2raya.org)
 
-### 1.3 一键安装 AdGuard Home
+### 3. 一键安装 AdGuard Home
 **一键脚本**  
 `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 后台管理地址，IP:3000，更多教程见 P3TERX 大佬的[AGH设置教程](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
