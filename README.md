@@ -20,14 +20,16 @@
 
 
 使用本方案，你需要准备以下设备：
-- 一台 Linux 系统的低功耗 arm 或 x86 设备（最低配置：~~让卖家帮忙~~刷了 Armbian 的 20 块玩客云即可）
-- 虚拟机创建 Debian 等 Linux 系统也行（支持 Docker 部署，但更推荐使用虚拟机独立 IP）
+- 一台运行 Linux 系统的低功耗 arm 或 x86 设备
+  - 最低配置：~~让卖家帮忙~~刷了 Armbian 的 20 块包邮玩客云
+  - 常见配置：旧笔记本刷 Deepin 系统，仅需一个 U 盘（0 成本变成上网本➕DIY NAS）
+  - 特殊配置：虚拟机创建 Debian 等 Linux 系统（支持 Docker 部署，但更推荐使用虚拟机独立 IP）
 - 一个千兆网口（对，单网卡就行）
 > 另一台电脑远程操作，需安装 ssh 工具（Win、Mac 自带终端就行，但新手推荐更简单的 [Xterminal](https://www.terminal.icu/)）  
 > 如果实在没电脑……手机使用 Termius、ServerBox 等 ssh 工具也可以。
 
 ## 一、安装工具
-使用 Xterminal 登录你的 Linux 设备。输入以下一键脚本命令安装所需工具。
+使用 Xterminal 登录你的 Linux 设备，输入以下一键脚本命令安装所需工具。
 
 ### 1. Github520（可跳过）
 请确保你的网络可以顺利访问 Github，提供一个[Github520](https://github.com/521xueweihan/GitHub520)项目供参考，如果还不行请自己解决。  
@@ -52,6 +54,7 @@
 ### 3. 一键安装 AdGuard Home
 **一键脚本**  
 `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
+
 后台管理地址，IP:3000，更多教程见 P3TERX 大佬的[AGH设置教程](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
 
 ## 二、搭配使用 AGH➕v2A
@@ -67,6 +70,7 @@
 - 分流模式：同上（支持 http 和 socks5 代理）
 - 防止 DNS 污染：自定义高级设置
 - 其他默认
+
 ![v2ray-setting](https://github.com/juneix/noOP-AGHv2/assets/81808039/ffff4967-bc13-4e49-8c47-9b96df553d10)
 
 按需【创建】单个节点，或【导入】订阅链接。  
