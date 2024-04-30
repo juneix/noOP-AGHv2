@@ -61,7 +61,7 @@
 - 分流模式：同上（支持 http 和 socks5 代理）
 - 防止 DNS 污染：自定义高级设置
 - 其他默认
-<img width="640" alt="HapiGo 2024-04-30 10 14 53" src="https://github.com/juneix/noOP-AGHv2/assets/81808039/ffff4967-bc13-4e49-8c47-9b96df553d10">  
+![v2ray-setting](https://github.com/juneix/noOP-AGHv2/assets/81808039/ffff4967-bc13-4e49-8c47-9b96df553d10)
 
 按需【创建】单个节点，或【导入】订阅链接。  
 选中 2-6 个节点后，左上角启动，更多详细教程可以参考油管或谷歌搜索。
