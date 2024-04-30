@@ -19,12 +19,12 @@
 ![xbox-speed](https://github.com/juneix/noOP-AGHv2/assets/81808039/38ffa48c-4201-4593-babe-cb3d1a8eb69b)
 
 
-使用本方案，你需要准备以下设备：
+使用本方案，你只需准备以下设备，低成本甚至 0 成本即可抄作业：
 - 一台运行 Linux 系统的低功耗 arm 或 x86 设备
   - 最低配置：~~让卖家帮忙~~刷了 Armbian 的 20 块包邮玩客云
   - 常见配置：旧笔记本刷 Deepin 系统，仅需一个 U 盘（0 成本变成上网本➕DIY NAS）
   - 特殊配置：虚拟机创建 Debian 等 Linux 系统（支持 Docker 部署，但更推荐使用虚拟机独立 IP）
-- 一个千兆网口（对，单网卡就行）
+- 设备有一个千兆网口（对，单网卡就行……甚至百兆也不是不能用.jpg）
 > 另一台电脑远程操作，需安装 ssh 工具（Win、Mac 自带终端就行，但新手推荐更简单的 [Xterminal](https://www.terminal.icu/)）  
 > 如果实在没电脑……手机使用 Termius、ServerBox 等 ssh 工具也可以。
 
