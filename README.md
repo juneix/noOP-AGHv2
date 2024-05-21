@@ -58,7 +58,7 @@
 后台管理地址，IP:3000，更多教程见 P3TERX 大佬的[AGH设置教程](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
 
 ## 二、搭配使用 AGH➕v2A
-### 1. AGH 初始化设置时，网页端口建议 3000，**DNS 端口建议默认 53 减少不必要的麻烦**。
+### 1. AGH 初始化设置时，网页端口默认 3000，**DNS 端口建议默认 53，减少不必要的麻烦**。
 
 如果提示 53 端口已绑定`bind: address already in use`，请参考[AGH官方文档](https://adguard-dns.io/kb/zh-CN/adguard-home/faq/#bindinuse)解除占用。  
 文档暂时没中文版本，请打开浏览器翻译功能，推荐[沉浸式翻译扩展](https://immersivetranslate.com/)
