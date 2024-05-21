@@ -7,7 +7,7 @@
 使用 OP 的新手，经过千辛万苦终于出国了，却发现宽带的 IPv6 公网访问没了，NAT1 网络环境也没了？岂不是得不偿失。  
 > 针对高阶需求的用户，OP、爱快是好工具，但它们都不太适合普通人，基本用不上（除非你家里开公司、开酒店民宿）。  
 
-本方案操作简单，对设备性能要求很低，除了 v2A➕AGH，你依然可以安装 CasaOS 随便折腾，比 Openwrt 的扩展性和易用性强多了。
+本方案操作简单，对设备性能要求很低，你的 Linux 设备上除了 v2A➕AGH，依然可以安装 CasaOS、1Panel、OMV 等随便折腾，比 Openwrt 的扩展性和易用性强多了。
 - 推荐全屋网络接入 AGH（修改路由器 DNS ），去除部分广告，防止大数据追踪
 - v2A 可全屋自动分流出国（修改路由器网关），也可以特定设备按需出国（单独设置网关或 socks5 代理）
 - IPv6 正常使用，搭配 Lucky 可以轻松实现远程访问、串流游戏等
@@ -58,7 +58,7 @@
 后台管理地址，IP:3000，更多教程见 P3TERX 大佬的[AGH设置教程](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
 
 ## 二、搭配使用 AGH➕v2A
-### 1. AGH 初始化设置时，网页端口建议 3000，**DNS 端口必须使用默认 53**。
+### 1. AGH 初始化设置时，网页端口建议 3000，**DNS 端口建议默认 53 减少不必要的麻烦**。
 
 如果提示 53 端口已绑定`bind: address already in use`，请参考[AGH官方文档](https://adguard-dns.io/kb/zh-CN/adguard-home/faq/#bindinuse)解除占用。  
 文档暂时没中文版本，请打开浏览器翻译功能，推荐[沉浸式翻译扩展](https://immersivetranslate.com/)
