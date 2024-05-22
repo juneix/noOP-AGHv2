@@ -36,6 +36,7 @@
 `sudo sh -c 'sed -i "/# GitHub520 Host Start/Q" /etc/hosts && curl https://raw.hellogithub.com/hosts >> /etc/hosts'`
 
 ### 2. 一键安装 v2rayA
+GitHub 项目地址➡️https://github.com/v2rayA/v2rayA  
 我使用的是基于 Debian 的系统（比如 OMV、Armbian），其他 Linux 发行版参考[官网安装文档](https://v2raya.org/docs/prologue/installation/)
 
 **一键脚本**  
@@ -54,6 +55,8 @@
 后台管理地址，IP:2017，更多使用教程见[v2rayA官方文档](https://v2raya.org)
 
 ### 3. 一键安装 AdGuard Home
+GitHub 项目地址➡️https://github.com/AdguardTeam/AdGuardHome  
+
 **一键脚本**  
 `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 
