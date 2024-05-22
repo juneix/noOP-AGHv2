@@ -36,18 +36,20 @@
 `sudo sh -c 'sed -i "/# GitHub520 Host Start/Q" /etc/hosts && curl https://raw.hellogithub.com/hosts >> /etc/hosts'`
 
 ### 2. 一键安装 v2rayA
+我使用的是基于 Debian 的系统（比如 OMV、Armbian），其他 Linux 发行版参考[官网安装文档](https://v2raya.org/docs/prologue/installation/)
+
 **一键脚本**  
 安装来源是作者的官网，部分地区可能速度较慢，请耐心等待。  
 `sh -c "$(wget -qO- https://github.com/v2rayA/v2rayA-installer/raw/main/installer.sh)" @ --with-v2ray`  
 
 **安装 iptables 模块**（已安装可跳过）  
-`apk add iptables ip6tables`
+`apt add iptables ip6tables`
 
 **启动 v2rayA 服务**  
-`rc-service v2raya start`  
+`sudo systemctl start v2raya.service`  
 
 **设置 v2rayA 开机自启动**  
-`rc-update add v2raya`  
+`sudo systemctl enable v2raya.service`  
 
 后台管理地址，IP:2017，更多使用教程见[v2rayA官方文档](https://v2raya.org)
 
@@ -55,7 +57,7 @@
 **一键脚本**  
 `curl -s -S -L https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v`  
 
-后台管理地址，IP:3000，更多教程见 P3TERX 大佬的[AGH设置教程](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
+后台管理地址，IP:3000，更多使用教程见 P3TERX 大佬的[AGH优化增强设置详解](https://p3terx.com/archives/use-adguard-home-to-build-dns-to-prevent-pollution-and-remove-ads-2.html)
 
 ## 二、搭配使用 AGH➕v2A
 ### 1. AGH 初始化设置时，网页端口默认 3000，**DNS 端口建议默认 53，减少不必要的麻烦**。
