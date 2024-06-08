@@ -25,7 +25,7 @@
   - 常见配置：旧笔记本刷 Deepin 系统，仅需制作一个 Ventoy 万能 U 盘（0 成本变成上网本➕DIY NAS）
   - 特殊配置：虚拟机创建 Debian 等 Linux 系统（支持 Docker 部署，但更推荐使用虚拟机独立 IP）
 - 设备有一个千兆网口（对，单网卡就行……甚至百兆也不是不能用.jpg）
-> 另一台电脑远程操作，需安装  SSH 工具（Win、Mac 自带终端就行，但新手推荐更简单的 [NextSSH](https://codemutex.com/)或功能更多的 [Xterminal](https://www.terminal.icu/)）  
+> 另一台电脑远程操作，需安装  SSH 工具（Win、Mac 自带终端就行，个人推荐简单易用的 [NextSSH](https://codemutex.com/)或功能更多的 [Xterminal](https://www.terminal.icu/)）  
 > 如果实在没电脑……手机使用 Termius、ServerBox 等 ssh 工具也可以。
 
 ## 一、安装工具
