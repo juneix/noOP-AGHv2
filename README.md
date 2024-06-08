@@ -73,7 +73,7 @@ GitHub 项目地址➡️https://github.com/AdguardTeam/AdGuardHome
 - 透明代理：大陆白名单或者 GFWlist，开启 IP 转发，开启端口分享
 - 实现方式：tproxy
 - 分流模式：同上（支持 http 和 socks5 代理）
-- 防止 DNS 污染：自定义高级设置
+- 防止 DNS 污染：自定义高级设置（搭配默认 53 端口的 AGH 使用）
 - 其他默认
 
 ![v2ray-setting](https://github.com/juneix/noOP-AGHv2/assets/81808039/ffff4967-bc13-4e49-8c47-9b96df553d10)
