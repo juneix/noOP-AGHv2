@@ -25,11 +25,11 @@
   - 常见配置：旧笔记本刷 Deepin 系统，仅需制作一个 Ventoy 万能 U 盘（0 成本变成上网本➕DIY NAS）
   - 特殊配置：虚拟机创建 Debian 等 Linux 系统（支持 Docker 部署，但更推荐使用虚拟机独立 IP）
 - 设备有一个千兆网口（对，单网卡就行……甚至百兆也不是不能用.jpg）
-> 另一台电脑远程操作，需安装 ssh 工具（Win、Mac 自带终端就行，但新手推荐更简单的 [Xterminal](https://www.terminal.icu/)）  
+> 另一台电脑远程操作，需安装  SSH 工具（Win、Mac 自带终端就行，但新手推荐更简单的 [NextSSH](https://codemutex.com/)或功能更多的 [Xterminal](https://www.terminal.icu/)）  
 > 如果实在没电脑……手机使用 Termius、ServerBox 等 ssh 工具也可以。
 
 ## 一、安装工具
-使用 Xterminal 登录你的 Linux 设备，输入以下一键脚本命令安装所需工具。
+使用 SSH 工具登录你的 Linux 设备，输入以下一键脚本命令安装所需工具。
 
 ### 1. Github520（可跳过）
 请确保你的网络可以顺利访问 Github，提供一个[Github520](https://github.com/521xueweihan/GitHub520)项目供参考，如果还不行请自己解决。  
