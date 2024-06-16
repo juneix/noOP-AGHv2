@@ -70,7 +70,7 @@ GitHub 项目地址➡️https://github.com/AdguardTeam/AdGuardHome
 
 ### 2. v2A 设置参考
 右上角⚙️【设置】  
-- 透明代理：大陆白名单或者 GFWlist，开启 IP 转发，开启端口分享
+- 透明代理：大陆白名单或者 GFWList，开启 IP 转发，开启端口分享
 - 实现方式：tproxy
 - 分流模式：同上（支持 http 和 socks5 代理）
 - 防止 DNS 污染：关闭（搭配 AGH 默认 53 端口使用）
